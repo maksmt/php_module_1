@@ -1,0 +1,6 @@
+maksim.cats:
+  path: '/cats'
+  defaults:
+    _controller: '\Drupal\maksim\Controller\maksimController::myPage'
+  requirements:
+    _permission: 'access content'
