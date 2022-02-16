@@ -1,7 +1,53 @@
 @import "variables_drupal";
 @import "variables_bootstrap";
+@import "header";
 @import "../../../../themes/contrib/bootstrap5/scss/style";
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: rgba(92, 88, 90, 0.795);
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        overflow-x: hidden;
+        padding: 0 10px;
+    }
+    main {
+        #block-first-module-theme-content {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+        }
+    }
+    h1 {
+        color: #fff;
+    }
+    #maksimsettingsform {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        #edit-submit {
+            width: 90px;
+            margin: 0 auto;
+            background-color: grey;
+            border: 1px solid grey;
+            color: #fff;
+            &:focus {
+                border: 1px solid grey;
+                outline: none;
+            }
+        }
+        .form-item-cat-name {
+            label {
+                font-size: 15px;
+                color: #fff;
+            }
+        }
+    }
 }

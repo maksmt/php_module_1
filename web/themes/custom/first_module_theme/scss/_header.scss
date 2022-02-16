@@ -1,12 +1,6 @@
 header {
     display: flex;
     justify-content: center;
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 500px;
-    }
     .navbar-brand {
         .site-logo {
             img {
@@ -15,24 +9,26 @@ header {
             }
             color: #fff;
         }
-    }
-    .site-title {
-        color: rgba(255, 255, 255, 0.8);
+
+        a {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
     }
     #search-block-form {
         .form-type-search {
             &:focus {
                 border: 1px solid #000;
-                outline: none;
+
                 box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
             }
         }
-        #edit-submit {
+        #edit-submit--2 {
             background-color: grey;
             border: 1px solid grey;
             color: #fff;
             &:focus {
                 border: 1px solid grey;
+                outline: none;
             }
         }
     }
