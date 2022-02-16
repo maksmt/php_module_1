@@ -7,10 +7,10 @@ class maksimController extends ControllerBase{
      /**
    * @return array
    */
-  public function myPage() {
-    $element = array(
-      '#markup' => 'Hello! You can add here a photo of your cat.',
-    );
-    return $element;
-  }
+//   public function myPage() {
+//     $element = array(
+//       '#markup' => 'Hello! You can add here a photo of your cat.',
+//     );
+//     return $element;
+//   }
 }
